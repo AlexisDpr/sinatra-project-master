@@ -1,0 +1,37 @@
+Pour faire fonctionner le site de mon terminal :
+
+alexis@alexis-VirtualBox:~/Téléchargements/sinatra_project-master$ rackup -p 4567
+Warning: the running version of Bundler (2.1.2) is older than the version that created the lockfile (2.1.4). We suggest you to upgrade to the version that created the lockfile by running `gem install bundler:2.1.4`.
+Traceback (most recent call last):
+        18: from /home/alexis/.rvm/gems/ruby-3.0.0/bin/rackup:23:in `<main>'
+        17: from /home/alexis/.rvm/gems/ruby-3.0.0/bin/rackup:23:in `load'
+        16: from /home/alexis/.rvm/gems/ruby-3.0.0/gems/rack-2.2.7/bin/rackup:5:in `<top (required)>'
+        15: from /home/alexis/.rvm/gems/ruby-3.0.0/gems/rack-2.2.7/lib/rack/server.rb:168:in `start'
+        14: from /home/alexis/.rvm/gems/ruby-3.0.0/gems/rack-2.2.7/lib/rack/server.rb:311:in `start'
+        13: from /home/alexis/.rvm/gems/ruby-3.0.0/gems/rack-2.2.7/lib/rack/server.rb:379:in `handle_profiling'
+        12: from /home/alexis/.rvm/gems/ruby-3.0.0/gems/rack-2.2.7/lib/rack/server.rb:312:in `block in start'
+        11: from /home/alexis/.rvm/gems/ruby-3.0.0/gems/rack-2.2.7/lib/rack/server.rb:422:in `wrapped_app'
+        10: from /home/alexis/.rvm/gems/ruby-3.0.0/gems/rack-2.2.7/lib/rack/server.rb:249:in `app'
+         9: from /home/alexis/.rvm/gems/ruby-3.0.0/gems/rack-2.2.7/lib/rack/server.rb:349:in `build_app_and_options_from_config'
+         8: from /home/alexis/.rvm/gems/ruby-3.0.0/gems/rack-2.2.7/lib/rack/builder.rb:66:in `parse_file'
+         7: from /home/alexis/.rvm/gems/ruby-3.0.0/gems/rack-2.2.7/lib/rack/builder.rb:105:in `load_file'
+         6: from /home/alexis/.rvm/gems/ruby-3.0.0/gems/rack-2.2.7/lib/rack/builder.rb:116:in `new_from_string'
+         5: from /home/alexis/.rvm/gems/ruby-3.0.0/gems/rack-2.2.7/lib/rack/builder.rb:116:in `eval'
+         4: from /home/alexis/Téléchargements/sinatra_project-master/config.ru:2:in `block in <main>'
+         3: from /usr/lib/ruby/2.7.0/bundler.rb:174:in `require'
+         2: from /usr/lib/ruby/2.7.0/bundler.rb:143:in `setup'
+         1: from /usr/lib/ruby/2.7.0/bundler/definition.rb:470:in `validate_runtime!'
+/usr/lib/ruby/2.7.0/bundler/definition.rb:495:in `validate_ruby!': Your Ruby version is 2.7.0, but your Gemfile specified 2.7.4 (Bundler::RubyVersionMismatch)
+alexis@alexis-VirtualBox:~/Téléchargements/sinatra_project-master$ rvm use 2.7.4
+
+RVM is not a function, selecting rubies with 'rvm use ...' will not work.
+
+You need to change your terminal emulator preferences to allow login shell.
+Sometimes it is required to use `/bin/bash --login` as the command.
+Please visit https://rvm.io/integration/gnome-terminal/ for an example.
+
+alexis@alexis-VirtualBox:~/Téléchargements/sinatra_project-master$ /bin/bash --login
+alexis@alexis-VirtualBox:~/Téléchargements/sinatra_project-master$ rvm --default use  2.7.4
+Using /home/alexis/.rvm/gems/ruby-2.7.4
+
+Merci Vincent <3
